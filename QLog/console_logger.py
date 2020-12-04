@@ -1,8 +1,8 @@
 """  Logger to log into console """
 
-from log_entry import LogEntry
-from log_level import LogLevel
-from logger import Logger
+from QLog.log_entry import LogEntry
+from QLog.log_level import LogLevel
+from QLog.logger import Logger
 
 
 class ConsoleLogger(Logger):

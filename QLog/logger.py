@@ -2,8 +2,8 @@
 
 from abc import ABC, abstractmethod
 
-from log_entry import LogEntry
-from log_level import LogLevel
+from QLog.log_entry import LogEntry
+from QLog.log_level import LogLevel
 
 
 class Logger(ABC):

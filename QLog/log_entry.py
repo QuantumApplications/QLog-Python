@@ -3,7 +3,7 @@
 from datetime import date
 from typing import NamedTuple
 
-from log_level import LogLevel
+from QLog.log_level import LogLevel
 
 
 class LogEntry(NamedTuple):

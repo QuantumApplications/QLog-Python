@@ -1,5 +1,6 @@
-from console_logger import ConsoleLogger
-from QLog import QLog, QLogHighlight, QLogDebug, QLogInfo, QLogWarning, QLogError
+import QLog
+from QLog.console_logger import ConsoleLogger
+from QLog import QLogHighlight, QLogDebug, QLogInfo, QLogWarning, QLogError
 
 
 def main():
