@@ -43,7 +43,7 @@ def log(level: LogLevel, data):
         caller.function,
         caller.lineno,
         level,
-        data
+        str(data)
     )
     for active_logger in loggers:
         active_logger.log(entry)
