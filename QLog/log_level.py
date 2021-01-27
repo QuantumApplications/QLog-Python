@@ -15,27 +15,32 @@ class LogLevel(Enum):
     @property
     def ansi_color(self):
         """ Associates an ansi color with each log level """
-        if self == LogLevel.highlight:
-            return '35m'
-        elif self == LogLevel.debug:
-            return '34m'
-        elif self == LogLevel.info:
-            return '32m'
-        elif self == LogLevel.warning:
-            return '33m'
-        elif self == LogLevel.error:
-            return '31m'
+
+        return ansi_colors[self]
 
     @property
     def ansi_color_sequence(self):
+        """ Returns ANSI color sequence """
+
         return u'\u001b' + '[' + str(self.ansi_color)
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
+            # pylint: disable=W0143
             return self.value < other.value
         return NotImplemented
 
     def __le__(self, other):
         if self.__class__ is other.__class__:
+            # pylint: disable=W0143
             return self.value <= other.value
         return NotImplemented
+
+
+ansi_colors = {
+    LogLevel.highlight: '35m',
+    LogLevel.debug: '34m',
+    LogLevel.info: '32m',
+    LogLevel.warning: '33m',
+    LogLevel.error: '31m'
+}
