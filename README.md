@@ -1,5 +1,6 @@
-[![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg?style=flat)](https://swift.org/)
-[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)]()
+[![Python 3](https://img.shields.io/pypi/v/QLog)](https://pypi.org/project/QLog/)
+[![Python 3](https://img.shields.io/pypi/pyversions/QLog)](https://pypi.org/project/QLog/)
+[![Python 3](https://img.shields.io/pypi/l/QLog)](https://pypi.org/project/QLog/)
 
 ![Test](https://github.com/QuantumApplications/QLog-Python/workflows/Test/badge.svg)
 [![codecov](https://codecov.io/gh/QuantumApplications/QLog/branch/master/graph/badge.svg)](https://codecov.io/gh/QuantumApplications/QLog-Python)
