@@ -20,6 +20,7 @@ jobs:
         run: pylint -d C0301 $(git ls-files '*.py')
 
   test:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,3 +32,7 @@ jobs:
         run: pip install pytest
       - name: Test with pytest
         run: pytest -v --doctest-modules
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: true
