@@ -1,3 +1,4 @@
+# pylint: disable=C0103
 """ QLog logger """
 
 import inspect
@@ -13,22 +14,32 @@ from QLog.logger import Logger
 
 
 def QLogHighlight(data):
+    """ Log highlight """
+
     log(LogLevel.highlight, data)
 
 
 def QLogDebug(data):
+    """ Log debug """
+
     log(LogLevel.debug, data)
 
 
 def QLogInfo(data):
+    """ Log info """
+
     log(LogLevel.info, data)
 
 
 def QLogWarning(data):
+    """ Log warning """
+
     log(LogLevel.warning, data)
 
 
 def QLogError(data):
+    """ Log error """
+
     log(LogLevel.error, data)
 
 
@@ -36,6 +47,8 @@ loggers: [Logger] = []
 
 
 def log(level: LogLevel, data):
+    """ log """
+
     caller = inspect.stack()[2]
     entry = LogEntry(
         datetime.now(),

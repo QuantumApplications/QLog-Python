@@ -15,8 +15,6 @@ class Logger(ABC):
     def do_log(self, log_entry):
         """ Log function to implement """
 
-        pass
-
     def log(self, log_entry: LogEntry):
         """ Log function to use """
 
