@@ -10,7 +10,7 @@ class MockLogger(Logger):
 
     log_entry: LogEntry = None
 
-    def __init__(self, log_level=LogLevel.highlight):
+    def __init__(self, log_level=LogLevel.HIGHLIGHT):
         self.log_level = log_level
 
     def do_log(self, log_entry: LogEntry):

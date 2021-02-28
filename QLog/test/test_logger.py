@@ -12,7 +12,7 @@ def test_log_entry():
     file = 'file'
     function = 'function'
     line = 1
-    level = LogLevel.error
+    level = LogLevel.ERROR
     data = 'data'
 
     entry = LogEntry(

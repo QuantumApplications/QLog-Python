@@ -13,7 +13,7 @@ def test_log_string():
     data = 'a'
 
     # 2. Action
-    log(LogLevel.error, data)
+    log(LogLevel.ERROR, data)
 
     # 3. Assert
     assert mock_logger.log_entry.text == str(data)
@@ -28,7 +28,7 @@ def test_log_int():
     data = 1
 
     # 2. Action
-    log(LogLevel.error, data)
+    log(LogLevel.ERROR, data)
 
     # 3. Assert
     assert mock_logger.log_entry.text == str(data)
@@ -43,7 +43,7 @@ def test_log_array():
     data = [1]
 
     # 2. Action
-    log(LogLevel.error, data)
+    log(LogLevel.ERROR, data)
 
     # 3. Assert
     assert mock_logger.log_entry.text == str(data)

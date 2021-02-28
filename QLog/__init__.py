@@ -16,31 +16,31 @@ from QLog.logger import Logger
 def QLogHighlight(data):
     """ Log highlight """
 
-    log(LogLevel.highlight, data)
+    log(LogLevel.HIGHLIGHT, data)
 
 
 def QLogDebug(data):
     """ Log debug """
 
-    log(LogLevel.debug, data)
+    log(LogLevel.DEBUG, data)
 
 
 def QLogInfo(data):
     """ Log info """
 
-    log(LogLevel.info, data)
+    log(LogLevel.INFO, data)
 
 
 def QLogWarning(data):
     """ Log warning """
 
-    log(LogLevel.warning, data)
+    log(LogLevel.WARNING, data)
 
 
 def QLogError(data):
     """ Log error """
 
-    log(LogLevel.error, data)
+    log(LogLevel.ERROR, data)
 
 
 loggers: [Logger] = []

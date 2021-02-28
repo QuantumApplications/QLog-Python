@@ -8,7 +8,7 @@ from QLog.logger import Logger
 class ConsoleLogger(Logger):
     """  Logger to log into console """
 
-    def __init__(self, log_level=LogLevel.highlight):
+    def __init__(self, log_level=LogLevel.HIGHLIGHT):
         self.log_level = log_level
 
     escape = u'\u001b'
