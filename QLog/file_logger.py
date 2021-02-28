@@ -21,7 +21,7 @@ class FileLogger(Logger):
         self.logger.addHandler(TimedRotatingFileHandler(path.absolute(), when='D'))
 
     def do_log(self, log_entry: LogEntry):
-        text = '\n' + log_entry.log_level.text + ' ' + log_entry.meta_text + log_entry.text
+        text = log_entry.log_level.text + ' ' + log_entry.meta_text + log_entry.text
         if self.log_level is LogLevel.INFO:
             return self.logger.info(text)
         if self.log_level is LogLevel.WARNING:
