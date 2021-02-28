@@ -5,9 +5,9 @@ name: Test
 on:
   workflow_dispatch:
   push:
-    branches-ignore: [ develop ]
+    branches-ignore: [ master ]
   pull_request:
-    branches-ignore: [ develop ]
+    branches-ignore: [ master ]
 
 jobs:
 
