@@ -17,6 +17,12 @@ class LogEntry(NamedTuple):
     text: str
 
     @property
+    def azure_meta_text(self):
+        """  The meta data of a log entry containing date, file, line and function """
+
+        return self.file + ':' + str(self.line) + ' ' + self.function + ': '
+
+    @property
     def meta_text(self):
         """  The meta data of a log entry containing date, file, line and function """
 
