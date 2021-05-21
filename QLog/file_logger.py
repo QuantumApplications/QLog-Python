@@ -22,10 +22,10 @@ class FileLogger(Logger):
 
     def do_log(self, log_entry: LogEntry):
         text = log_entry.log_level.text + ' ' + log_entry.meta_text + log_entry.text
-        if self.log_level is LogLevel.INFO:
+        if log_entry.log_level is LogLevel.INFO:
             return self.logger.info(text)
-        if self.log_level is LogLevel.WARNING:
+        if log_entry.log_level is LogLevel.WARNING:
             return self.logger.warning(text)
-        if self.log_level is LogLevel.ERROR:
+        if log_entry.log_level is LogLevel.ERROR:
             return self.logger.error(text)
         return self.logger.debug(text)
