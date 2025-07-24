@@ -5,7 +5,7 @@ from setuptools import setup
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-with open(os.path.join(HERE, "README.md")) as fid:
+with open(os.path.join(HERE, "README.md"), encoding="utf-8") as fid:
     README = fid.read()
 
 setup(
