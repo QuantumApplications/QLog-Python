@@ -11,7 +11,7 @@ class ConsoleLogger(Logger):
     def __init__(self, log_level=LogLevel.HIGHLIGHT):
         self.log_level = log_level
 
-    escape = u'\u001b'
+    escape = '\u001b'
     ansi_bold = '1m'
     ansi_reset = '0m'
     ansi_text_color = '37m'

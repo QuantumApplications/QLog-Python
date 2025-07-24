@@ -14,9 +14,9 @@ class AzureSystemLogger(Logger):
         self.log_level = log_level
         if self.log_level is LogLevel.INFO:
             logging.getLogger().setLevel(logging.INFO)
-        if self.log_level is LogLevel.WARNING:
+        elif self.log_level is LogLevel.WARNING:
             logging.getLogger().setLevel(logging.WARNING)
-        if self.log_level is LogLevel.ERROR:
+        elif self.log_level is LogLevel.ERROR:
             logging.getLogger().setLevel(logging.ERROR)
         else:
             logging.getLogger().setLevel(logging.DEBUG)
