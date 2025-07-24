@@ -22,7 +22,7 @@ class LogLevel(Enum):
     def ansi_color_sequence(self):
         """ Returns ANSI color sequence """
 
-        return u'\u001b' + '[' + str(self.ansi_color)
+        return '\u001b[' + str(self.ansi_color)
 
     @property
     def python_log_level(self):

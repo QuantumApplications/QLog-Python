@@ -43,7 +43,7 @@ def QLogError(data):
     log(LogLevel.ERROR, data)
 
 
-loggers: [Logger] = []
+loggers: list[Logger] = []
 
 
 def log(level: LogLevel, data):
